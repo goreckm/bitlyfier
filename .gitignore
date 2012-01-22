@@ -19,3 +19,4 @@ _ReSharper.*/
 
 #Project Specific Files
 App.config
+*.nupkg

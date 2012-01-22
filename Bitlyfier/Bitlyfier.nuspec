@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>Bitlyfier</id>
+    <version>$version$</version>
+    <authors>Michal Gorecki</authors>
+    <owners>Michal Gorecki</owners>
+    <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
+    <projectUrl>https://github.com/goreckm/bitlyfier</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Bitlyfier is a simple wrapper around the Bitly v3 API</description>
+    <releaseNotes>
+		* Initial Release. Support for /v3/shorten included.
+	</releaseNotes>
+    <tags>Bitly</tags>
+  </metadata>
+  <files>
+	<file src="Nuget\Content\web.config.transform" target="content\web.config.transform" />
+  </files>
+</package>
