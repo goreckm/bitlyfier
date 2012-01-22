@@ -16,3 +16,6 @@ packages/
 *.csproj.ReSharper
 _ReSharper.*/
 *.DotSettings.user
+
+#Project Specific Files
+App.config
