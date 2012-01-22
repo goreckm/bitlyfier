@@ -1,0 +1,18 @@
+#Visual Studio solution files
+*.suo
+*.csproj.user
+*.sln.docstates
+
+#Binary files
+bin/
+obj/
+packages/
+
+#Generic Files
+.DS_Store
+
+#Resharper Files
+*.ReSharper.user
+*.csproj.ReSharper
+_ReSharper.*/
+*.DotSettings.user

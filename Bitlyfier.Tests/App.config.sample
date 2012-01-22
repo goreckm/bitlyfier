@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <configSections>
+    <section name="Bitlyfier" type="Bitlyfier.Configuration.BitlyfierConfigSection, Bitlyfier" requirePermission="false" />
+  </configSections>
+
+  <Bitlyfier apiLogin="bitlyapidemo" apiKey="R_0da49e0a9118ff35f52f629d2d71bf07" />
+</configuration>

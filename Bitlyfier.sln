@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bitlyfier", "Bitlyfier\Bitlyfier.csproj", "{D0E6C7E0-1C5F-4673-A0C3-7D8132B75245}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bitlyfier.Tests", "Bitlyfier.Tests\Bitlyfier.Tests.csproj", "{E3683CF1-7B0A-45ED-AF95-50D0AD7D44F3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D0E6C7E0-1C5F-4673-A0C3-7D8132B75245}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0E6C7E0-1C5F-4673-A0C3-7D8132B75245}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0E6C7E0-1C5F-4673-A0C3-7D8132B75245}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{D0E6C7E0-1C5F-4673-A0C3-7D8132B75245}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{D0E6C7E0-1C5F-4673-A0C3-7D8132B75245}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D0E6C7E0-1C5F-4673-A0C3-7D8132B75245}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0E6C7E0-1C5F-4673-A0C3-7D8132B75245}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0E6C7E0-1C5F-4673-A0C3-7D8132B75245}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{D0E6C7E0-1C5F-4673-A0C3-7D8132B75245}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{D0E6C7E0-1C5F-4673-A0C3-7D8132B75245}.Release|x86.ActiveCfg = Release|Any CPU
+		{E3683CF1-7B0A-45ED-AF95-50D0AD7D44F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3683CF1-7B0A-45ED-AF95-50D0AD7D44F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3683CF1-7B0A-45ED-AF95-50D0AD7D44F3}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{E3683CF1-7B0A-45ED-AF95-50D0AD7D44F3}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{E3683CF1-7B0A-45ED-AF95-50D0AD7D44F3}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E3683CF1-7B0A-45ED-AF95-50D0AD7D44F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3683CF1-7B0A-45ED-AF95-50D0AD7D44F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3683CF1-7B0A-45ED-AF95-50D0AD7D44F3}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{E3683CF1-7B0A-45ED-AF95-50D0AD7D44F3}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{E3683CF1-7B0A-45ED-AF95-50D0AD7D44F3}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
