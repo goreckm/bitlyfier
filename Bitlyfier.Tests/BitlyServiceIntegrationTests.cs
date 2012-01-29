@@ -15,9 +15,11 @@ namespace Bitlyfier.Tests
             const string longUrl = "http://betaworks.com";
             const string expectedResult = "beta";
 
-            string actualResult = new Bitlyfier().Shorten(longUrl).global_hash;
+            var response = new Bitlyfier().Shorten(longUrl);
+            string actualResult = response.GlobalHash;
             
             Assert.AreEqual(expectedResult, actualResult);
+            Assert.AreEqual(longUrl, response.LongUrl);
         }
     }
 }

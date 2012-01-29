@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Bitlyfier.Configuration;
 using Microsoft.Server.Common;
+using Bitlyfier.ResponseMessages;
 
 namespace Bitlyfier
 {
@@ -29,12 +30,12 @@ namespace Bitlyfier
         public HttpMessageHandler HttpMessageHandler { get; set; }
 
 
-        public dynamic Shorten(string longUrl)
+        public ShortenResponse Shorten(string longUrl)
         {
             return ShortenAsync(longUrl).Result;
         }
 
-        public Task<dynamic> ShortenAsync(string longUrl)
+        public Task<ShortenResponse> ShortenAsync(string longUrl)
         {
             if (longUrl == null)
                 throw new ArgumentNullException("longUrl", "longUrl must be provided.");
@@ -54,7 +55,16 @@ namespace Bitlyfier
                                         if (statusCode != 200)
                                             throw new HttpRequestException("Bitly shorten resulted in status code: " + statusCode);
 
-                                        return json.data;
+                                        var response = new ShortenResponse
+                                        {
+                                            Url = json.data.url.ReadAs<string>(),
+                                            Hash = json.data.hash.ReadAs<string>(),
+                                            GlobalHash = json.data.global_hash.ReadAs<string>(),
+                                            LongUrl = json.data.long_url.ReadAs<string>(),
+                                            IsNewHash = json.data.new_hash.ReadAs<int>() == 1
+                                        };
+
+                                        return response;
                                     });
         }
     }
