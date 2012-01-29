@@ -10,6 +10,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Bitlyfier is a simple wrapper around the Bitly v3 API</description>
     <releaseNotes>
+		* API return types will now be strongly typed.
 		* Initial Release. Support for /v3/shorten included.
 	</releaseNotes>
     <tags>Bitly</tags>
