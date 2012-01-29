@@ -16,11 +16,13 @@ namespace Bitlyfier.Configuration
             ApiLogin = configSection == null ? "bitlyapidemo" : configSection.ApiLogin;
             ApiKey = configSection == null ? "R_0da49e0a9118ff35f52f629d2d71bf07" : configSection.ApiKey;
             EncodeUrls = configSection == null || configSection.EncodeUrls;
+            CacheTimeout = configSection == null ? 60 : configSection.CacheTimeout;
         }
 
         public string ApiLogin { get; set; }
         public string ApiKey { get; set; }
         public bool EncodeUrls { get; set; }
+        public int CacheTimeout { get; set; }
     }
 
 
@@ -30,5 +32,6 @@ namespace Bitlyfier.Configuration
         string ApiKey { get; set; }
 
         bool EncodeUrls { get; set; }
+        int CacheTimeout { get; set; }
     }
 }

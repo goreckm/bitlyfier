@@ -21,5 +21,17 @@ namespace Bitlyfier.Tests
             Assert.AreEqual(expectedResult, actualResult);
             Assert.AreEqual(longUrl, response.LongUrl);
         }
+
+        [Test]
+        public void expand_should_return_data_for_valid_hash()
+        {
+            const string hash = "beta";
+            const string expectedUrl = "http://betaworks.com/";
+
+            var response = new Bitlyfier().ExpandAsync(hash: hash).Result;
+            string actualResult = response.First().LongUrl;
+
+            Assert.AreEqual(expectedUrl, actualResult);
+        }
     }
 }

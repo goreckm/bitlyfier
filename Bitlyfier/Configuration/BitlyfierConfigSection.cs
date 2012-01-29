@@ -25,5 +25,11 @@ namespace Bitlyfier.Configuration
         {
             get { return (bool)base["encodeUrls"]; }
         }
+
+        [ConfigurationProperty("cacheTimeout", DefaultValue = 60)]
+        public int CacheTimeout
+        {
+            get { return (int)base["cacheTimeout"]; }
+        }
     }
 }
