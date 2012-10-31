@@ -12,7 +12,7 @@ namespace Bitlyfier.Tests
         [Test]
         public void should_return_data_for_valid_url()
         {
-            const string longUrl = "http://betaworks.com";
+            const string longUrl = "http://betaworks.com/";
             const string expectedResult = "beta";
 
             var response = new Bitlyfier().Shorten(longUrl);

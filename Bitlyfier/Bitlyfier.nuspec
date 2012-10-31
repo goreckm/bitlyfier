@@ -10,6 +10,8 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Bitlyfier is a simple wrapper around the Bitly v3 API</description>
     <releaseNotes>
+		* Updated references to the final version of WebAPI, and replace System.JSON with Json.NET
+		* Removed /v3/expand service support. Decided to only support /v3/shorten for now.
 		* Added BitlyfierContext, which is a web wrapper around the bitly service, that performs caching, etc
 		* Added /v3/expand service support.
 		* API return types will now be strongly typed.

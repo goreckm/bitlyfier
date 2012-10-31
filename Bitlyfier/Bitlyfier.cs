@@ -27,7 +27,7 @@ namespace Bitlyfier
         }
 
 
-        public HttpMessageHandler HttpMessageHandler { get; set; }
+        //public HttpMessageHandler HttpMessageHandler { get; set; }
         public IBitlyfierConfiguration Configuration
         {
             get { return this.configuration; }
@@ -47,7 +47,7 @@ namespace Bitlyfier
             if (configuration.EncodeUrls)
                 longUrl = HttpUtility.UrlEncode(longUrl);
 
-            var client = new HttpClient(HttpMessageHandler);
+            var client = new HttpClient();
             var url = ShortenUrl + "?login=" + configuration.ApiLogin + "&apiKey=" + configuration.ApiKey + "&longUrl=" + longUrl + "&format=json";
             
             var stream = client.GetAsync(url);
